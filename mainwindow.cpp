@@ -12,6 +12,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->sourceBrowse,SIGNAL(clicked(bool)),this,SLOT(sourceBrowseClick()));
     connect(ui->destBrowse,SIGNAL(clicked(bool)),this,SLOT(destBrowseClick()));
     connect(ui->startBtn,SIGNAL(clicked(bool)),this,SLOT(startClick()));
+    connect(ui->helpBtn,SIGNAL(clicked(bool)),this,SLOT(helpClick()));
 }
 
 QString MainWindow::browseClick(bool dir) {
@@ -95,7 +96,7 @@ void MainWindow::startClick() {
 }
 
 void MainWindow::helpClick() {
-    QMessageBox::information(this,"Quick info","This tool converts Orbtalks call rates CSV file into 3CX XML file ready to be upload into CDR prefixes cost settings.\n Just select source file, program will automatically fill in destination file option (but one can change that) and press start.\n Conersion make take some time depending on the size of the source file.",QMessageBox::Ok);
+    QMessageBox::information(this,"Quick info","This tool converts call rates CSV file into 3CX XML file ready to be upload into CDR prefixes cost settings.\nJust select source file, program will automatically fill in destination file option (but one can change that) and press start.\nConversion may take some time depending on the size of the source file.\nPlease see README.md file for more details.",QMessageBox::Ok);
 }
 
 MainWindow::~MainWindow()

@@ -30,10 +30,7 @@ HEADERS  += mainwindow.h
 
 FORMS    += mainwindow.ui
 
-win32:RC_ICONS += winIcon.ico
-QMAKE_TARGET_COMPANY += Health Bridge Ltd.
-QMAKE_TARGET_DESCRIPTION += Orbtalk to 3CX cost table converter
-QMAKE_TARGET_COPYRIGHT += 2017 HBL
+win32:RC_ICONS += chaos.ico
 VERSION += 1.0
 
 DISTFILES += \
